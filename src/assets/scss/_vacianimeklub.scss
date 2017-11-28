@@ -56,3 +56,11 @@
 .main-feature-content {
     @include card-section;
 }
+
+.more-link {
+    @include button($expand: true, $background: $vak-blue, $background-hover: lighten($vak-blue, 5%), $color: $white);
+}
+
+.edit-link a {
+    @include button($background: $vak-orange, $background-hover: lighten($vak-orange, 5%), $color: $white);
+}
