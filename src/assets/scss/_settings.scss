@@ -70,12 +70,19 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
+
+$almost-white: #e0e0e0;
+$vak-red: #D95426;
+$vak-blue: #22538E;
+$vak-orange: #D99325;
+$vak-green: #1A975B;
+
 $foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #cc4b37,
+  primary: $vak-blue,
+  secondary: $vak-orange,
+  success: $vak-green,
+  warning: $vak-orange,
+  alert: $vak-red,
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
@@ -298,8 +305,8 @@ $button-sizes: (
 );
 $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;
-$button-background-hover-lightness: -20%;
-$button-hollow-hover-lightness: -50%;
+$button-background-hover-lightness: 20%;
+$button-hollow-hover-lightness: 50%;
 $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
 
 // 12. Button Group
@@ -474,7 +481,7 @@ $menu-margin: 0;
 $menu-nested-margin: $global-menu-nested-margin;
 $menu-items-padding: $global-menu-padding;
 $menu-simple-margin: 1rem;
-$menu-item-color-active: $white;
+$menu-item-color-active: get-color(primary);
 $menu-item-background-active: get-color(primary);
 $menu-icon-spacing: 0.25rem;
 $menu-item-background-hover: $light-gray;
@@ -848,7 +855,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0;
-$topbar-background: $dark-nav-color;
+$topbar-background: transparent;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;

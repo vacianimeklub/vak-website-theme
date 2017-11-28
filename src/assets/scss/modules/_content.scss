@@ -1,4 +1,4 @@
-.main-container {
+.main-container, .site-header, .frontpage-header-contents {
   @include xy-grid-container;
 }
 

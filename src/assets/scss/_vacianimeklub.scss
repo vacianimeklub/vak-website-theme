@@ -1,0 +1,58 @@
+@mixin visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.wpcf7-submit {
+    @include button(true);
+}
+
+.frontpage-header {
+    padding-top: rem-calc(100);
+    padding-bottom: rem-calc(100);
+    background-size: cover;
+    background: url('../images/header.jpg') no-repeat center center;
+}
+
+.frontpage-logo-title {
+    @include visuallyhidden;
+}
+
+.frontpage-logo-subtitle {
+    color: $white;
+}
+
+.frontpage-cta-button {
+    @include button($background: $almost-white, $background-hover: $white, $color: $almost-white, $style: hollow);
+}
+
+.frontpage-main-features {
+    @include xy-grid();
+    @include xy-grid-layout(2, '.frontpage-main-feature', $gutter-position: right);
+}
+
+.frontpage-main-feature {
+    @include card-container($vak-blue, $white);
+    &:nth-child(4n) {
+        background-color: $vak-red;
+    }
+    &:nth-child(4n+1) {
+        background-color: $vak-orange;
+    }
+    &:nth-child(4n+2) {
+        background-color: $vak-blue;
+    }
+    &:nth-child(4n+3) {
+        background-color: $vak-green;
+    }
+}
+
+.main-feature-content {
+    @include card-section;
+}
