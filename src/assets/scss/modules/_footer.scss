@@ -8,8 +8,13 @@
   @include xy-grid;
   padding: rem-calc(30) 0;
 
-  section {
-    @include xy-cell(auto);
+  section, .widget {
+    margin-bottom: rem-calc(30);
+    
+    @include xy-cell(12);
+    @include breakpoint(medium) {
+      @include xy-cell(4);
+    }
   }
 
   ul {
