@@ -29,6 +29,11 @@
     @include button(true);
 }
 
+// Widget fixes
+.widget .widget_facebook_likebox {
+    @include responsive-embed(default);
+}
+
 // VAK styling
 
 .frontpage-header {
@@ -81,4 +86,41 @@
 
 .edit-link a {
     @include button($background: $vak-orange, $background-hover: lighten($vak-orange, 5%), $color: $white);
+}
+
+// Join 
+#post-1246 .entry-content {
+    .join-wrapper {
+        @include xy-grid;
+    }
+
+    .join-content {
+        @include xy-cell(12, false);
+        @include breakpoint(large) {
+            @include xy-cell(8, false);
+        }
+    }
+
+    .join-sidebar {
+        @include xy-cell(12, false);
+        @include breakpoint(large) {
+            @include xy-cell(4, left);
+            @include xy-gutters(left);
+        }
+        @include callout-base;
+        @include callout-style($vak-blue);
+
+        h2 {
+            font-size: rem-calc(20);
+            font-weight: bold;
+        }
+        h3 {
+            font-size: rem-calc(18);
+            margin-top: rem-calc(18);
+            font-style: italic;
+        }
+        p {
+            font-size: rem-calc(16);
+        }
+    }
 }
