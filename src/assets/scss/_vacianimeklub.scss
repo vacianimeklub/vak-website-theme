@@ -34,6 +34,10 @@
     @include responsive-embed(default);
 }
 
+.widget h6 {
+    font-weight: bold;
+}
+
 // VAK styling
 
 .frontpage-header {
@@ -120,7 +124,7 @@
             font-style: italic;
         }
         p {
-            font-size: rem-calc(16);
+            font-size: rem-calc(14);
         }
     }
 }
