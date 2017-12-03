@@ -75,13 +75,12 @@ $vak-font-to-logo-ratio: 2.66;
         @include callout-style($vak-blue);
 
         h2 {
-            font-size: rem-calc(20);
+            font-size: rem-calc(32);
             font-weight: bold;
         }
         h3 {
-            font-size: rem-calc(18);
-            margin-top: rem-calc(18);
-            font-style: italic;
+            font-size: rem-calc(24);
+            margin-top: rem-calc(24);
         }
         p {
             font-size: rem-calc(14);

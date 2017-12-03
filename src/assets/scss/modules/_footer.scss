@@ -15,6 +15,10 @@
     @include breakpoint(medium) {
       @include xy-cell(4);
     }
+
+    h6 {
+      font-size: rem-calc(28);
+    }
   }
 
   ul {
