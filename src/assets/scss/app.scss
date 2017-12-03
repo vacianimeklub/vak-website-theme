@@ -58,6 +58,8 @@
   Add your scss files below to structure your project styles
 */
 
+@import "../../../node_modules/font-awesome/css/font-awesome.css";
+
 // Global
 @import "global/_accessibility";
 @import "global/colors";

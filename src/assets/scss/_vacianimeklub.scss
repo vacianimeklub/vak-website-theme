@@ -114,3 +114,22 @@ $topbar-logo-img-size: $topbar-title-font-size * $vak-font-to-logo-ratio * 0.75;
         shape-rendering: crispEdges;
     }
 }
+
+.nav-previous a,
+.nav-next a {
+    @include button($background: $vak-blue, $style: hollow);
+
+    .fa {
+        font-size: rem-calc(12);
+    }
+}
+
+$nav-fa-space: 8px;
+
+.nav-previous a .fa {    
+    margin-right: rem-calc($nav-fa-space);
+}
+
+.nav-next a .fa {
+    margin-left: rem-calc($nav-fa-space);
+}
