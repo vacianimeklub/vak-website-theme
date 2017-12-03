@@ -8,7 +8,10 @@
 
 get_header(); ?>
 
-<?php get_template_part( 'template-parts/featured-image' ); ?>
+<?php
+	// We definitely don't want this at the moment.
+	// get_template_part( 'template-parts/featured-image' ); 
+?>
 <div class="main-container">
 	<div class="main-grid">
 		<main class="main-content">
