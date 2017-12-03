@@ -44,7 +44,7 @@
 					<button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
 					<span class="site-mobile-title title-bar-title">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img src="<?php echo get_template_directory_uri() . "/"?>dist/assets/images/vaci-anime-klub-logo-500-opt.png" alt="<?php bloginfo( 'name' ); ?>" />
+							<img src="<?php echo get_template_directory_uri() . "/"?>dist/assets/images/vaci-anime-klub-logo-uj-500.png" alt="<?php bloginfo( 'name' ); ?>" />
 						</a>
 					</span>
 				</div>
@@ -54,7 +54,7 @@
 				<div class="top-bar-left">
 					<div class="site-desktop-title top-bar-title">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img src="<?php echo get_template_directory_uri() . "/"?>dist/assets/images/vaci-anime-klub-logo-500-opt.png" alt="<?php bloginfo( 'name' ); ?>" />
+							<img src="<?php echo get_template_directory_uri() . "/"?>dist/assets/images/vaci-anime-klub-logo-uj-500.png" alt="<?php bloginfo( 'name' ); ?>" />
 						</a>
 					</div>
 				</div>
