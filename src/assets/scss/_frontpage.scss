@@ -1,4 +1,4 @@
-$header-overlay-color: rgba(0, 0, 0, 0.33);
+$header-overlay-color: rgba(50, 0, 0, 0.33);
 
 .frontpage-header-wrapper {
     padding-top: rem-calc(50);
@@ -121,7 +121,7 @@ $logo-img-size-large: $logo-font-base-size-large * $font-to-logo-ratio;
         background-color: $vak-blue;
     }
     &:nth-child(4n+3) {
-        background-color: $vak-green;
+        background-color: $vak-teal2;
     }
 }
 
