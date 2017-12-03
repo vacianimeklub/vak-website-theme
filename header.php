@@ -43,8 +43,9 @@
 				<div class="title-bar-left">
 					<button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
 					<span class="site-mobile-title title-bar-title">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img src="<?php echo get_template_directory_uri() . "/"?>dist/assets/images/vaci-anime-klub-logo-uj-500.png" alt="<?php bloginfo( 'name' ); ?>" />
+						<a class="topbar-logo-wrapper" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<h1 class="topbar-logo-title">Váci Anime Klub</h1>
+							<img class="topbar-logo" src="<?php echo get_template_directory_uri() . "/"?>dist/assets/images/vaci-anime-klub-logo.svg" alt="Váci Anime Klub logo"/>
 						</a>
 					</span>
 				</div>
@@ -53,8 +54,9 @@
 			<nav class="site-navigation top-bar" role="navigation">
 				<div class="top-bar-left">
 					<div class="site-desktop-title top-bar-title">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img src="<?php echo get_template_directory_uri() . "/"?>dist/assets/images/vaci-anime-klub-logo-uj-500.png" alt="<?php bloginfo( 'name' ); ?>" />
+						<a class="topbar-logo-wrapper" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<h1 class="topbar-logo-title">Váci Anime Klub</h1>
+							<img class="topbar-logo" src="<?php echo get_template_directory_uri() . "/"?>dist/assets/images/vaci-anime-klub-logo.svg" alt="Váci Anime Klub logo"/>
 						</a>
 					</div>
 				</div>

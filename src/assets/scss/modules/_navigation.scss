@@ -29,15 +29,15 @@
 .top-bar {
   .menu .menu-item {
     & > a { 
-      color: $vak-blue;
+      color: $almost-white;
     }
     & > a:hover {
-      background-color: $almost-white;
+      color: $white;
     }
   }
   .menu .menu-item.current-menu-item {
     & > a, & > a:hover { 
-      background-color: $vak-red;
+      background-color: $vak-teal;
       color: $white;
     } 
   }

@@ -42,12 +42,11 @@ $header-overlay-color: rgba(50, 0, 0, 0.33);
 $logo-font-base-size-small-mid: 50;
 $logo-font-base-size-large: 65;
 
-$font-to-logo-ratio: 2.66;
 $logo-text-spacing-small-mid: $logo-font-base-size-small-mid / 2; 
 $logo-text-spacing-large: $logo-font-base-size-large / 2;
 
-$logo-img-size-small-mid: $logo-font-base-size-small-mid * $font-to-logo-ratio;
-$logo-img-size-large: $logo-font-base-size-large * $font-to-logo-ratio;
+$logo-img-size-small-mid: $logo-font-base-size-small-mid * $vak-font-to-logo-ratio;
+$logo-img-size-large: $logo-font-base-size-large * $vak-font-to-logo-ratio;
 
 .frontpage-logo-title {
     font-size: rem-calc($logo-font-base-size-small-mid);
