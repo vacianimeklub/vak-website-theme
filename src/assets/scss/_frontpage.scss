@@ -1,8 +1,13 @@
+$header-overlay-color: rgba(0, 0, 0, 0.33);
+
 .frontpage-header-wrapper {
     padding-top: rem-calc(50);
     padding-bottom: rem-calc(50);
+    
+    background: linear-gradient($header-overlay-color, $header-overlay-color), url('../images/header.jpg');
     background-size: cover;
-    background: url('../images/header.jpg') no-repeat center center;
+    background-position: center center;
+    background-repeat: no-repeat;
 
     @include breakpoint(large) {
         padding-top: rem-calc(100);
