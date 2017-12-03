@@ -76,6 +76,7 @@ $vak-red: #D95426;
 $vak-blue: #22538E;
 $vak-orange: #D99325;
 $vak-green: #1A975B;
+$vak-black: #1d1d1d;
 
 $foundation-palette: (
   primary: $vak-blue,
@@ -139,7 +140,8 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700&subset=latin-ext');
+$header-font-family: 'Yanone Kaffeesatz', $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;

@@ -23,14 +23,20 @@
 	<?php endif; ?>
 
 	<?php if ( is_front_page() ): ?>
-		<header class="frontpage-header" role="banner">
-			<div class="frontpage-header-contents">
-				<img src="<?php echo get_template_directory_uri() . "/"?>dist/assets/images/vaci-anime-klub-logo-500-opt.png" alt="<?php bloginfo( 'name' ); ?>" />
-				<h1 class="frontpage-logo-title">Váci Anime Klub</h1>
-				<h2 class="frontpage-logo-subtitle">Csatlakozzá, dik!</h2>
-				<a href="/csatlakoznal" class="frontpage-cta-button button large">Csatlakozz! :)</a>
-			</div>
-		</header>
+		<div class="frontpage-header-wrapper">
+			<header class="frontpage-header" role="banner">
+				<div class="frontpage-header-logo">
+					<h1 class="frontpage-logo-title">Váci Anime Klub</h1>
+					<img class="frontpage-logo" src="<?php echo get_template_directory_uri() . "/"?>dist/assets/images/vaci-anime-klub-logo.svg" alt="Váci Anime Klub logo"/>
+				</div>
+				<div class="frontpage-header-contents">
+					<h2 class="frontpage-header-subtitle">Animés társaságra vágysz?</h2>
+					<p class="frontpage-header-body">Gyere el hozzánk, ismerkedj meg velünk és szerezz új animés barátokat!</p>
+					<a href="/csatlakoznal" class="frontpage-cta-button button large">Csatlakozz hozzánk!</a>
+					<p class="frontpage-header-small">Mi vagyunk a Váci Anime Klub, az észak-Pest megyei animések második otthona 2007 óta.</p>
+				</div>
+			</header>
+		</div>
 	<?php else: ?>
 		<header class="site-header" role="banner">
 			<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle() ?>>

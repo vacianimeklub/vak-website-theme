@@ -1,0 +1,123 @@
+.frontpage-header-wrapper {
+    padding-top: rem-calc(50);
+    padding-bottom: rem-calc(50);
+    background-size: cover;
+    background: url('../images/header.jpg') no-repeat center center;
+
+    @include breakpoint(large) {
+        padding-top: rem-calc(100);
+        padding-bottom: rem-calc(100);
+    }
+}
+
+.frontpage-header {
+    @include xy-grid;
+    @include xy-grid-container();
+}
+
+.frontpage-header-logo {
+    @include xy-cell(12);
+    @include breakpoint(large) {
+        @include xy-cell(7);
+        @include flex-align-self(middle);
+    }
+
+    @include flex;
+}
+
+.frontpage-header-contents {
+    @include xy-cell(12);
+    @include breakpoint(large) {
+        @include xy-cell(5);
+    }
+    color: $white;
+}
+
+
+$logo-font-base-size-small-mid: 50;
+$logo-font-base-size-large: 65;
+
+$font-to-logo-ratio: 2.66;
+$logo-text-spacing-small-mid: $logo-font-base-size-small-mid / 2; 
+$logo-text-spacing-large: $logo-font-base-size-large / 2;
+
+$logo-img-size-small-mid: $logo-font-base-size-small-mid * $font-to-logo-ratio;
+$logo-img-size-large: $logo-font-base-size-large * $font-to-logo-ratio;
+
+.frontpage-logo-title {
+    font-size: rem-calc($logo-font-base-size-small-mid);
+    line-height: rem-calc($logo-img-size-small-mid);
+
+    @include breakpoint(large) {
+        font-size: rem-calc($logo-font-base-size-large);
+        line-height: rem-calc($logo-img-size-large);
+    }
+}
+
+.frontpage-logo {
+    width: rem-calc($logo-img-size-small-mid);
+    height: rem-calc($logo-img-size-small-mid);
+    margin-right: rem-calc($logo-text-spacing-small-mid);
+
+    @include breakpoint(large) {
+        width: rem-calc($logo-img-size-large);
+        height: rem-calc($logo-img-size-large);
+        margin-right: rem-calc($logo-text-spacing-large);
+    }
+}
+
+.frontpage-logo-title {
+    @include flex-order(1);
+    font-weight: bold;
+    color: $white;   
+}
+
+.frontpage-logo {
+    @include flex-order(0);
+}
+
+.frontpage-header-subtitle {
+    font-size: rem-calc(48);
+    margin-top: rem-calc(24);
+}
+
+.frontpage-header-body {
+    font-size: rem-calc(22);
+    margin-bottom: rem-calc(36);    
+}
+
+.frontpage-header-small {
+    font-size: rem-calc(18);
+    margin-top: rem-calc(32);
+}
+
+.frontpage-cta-button {
+    @include button($background: $vak-green, $color: $almost-white);
+    //@include button-expand;
+    //@include button($background: $almost-white, $background-hover: $white, $color: $almost-white, $style: hollow);
+}
+
+.frontpage-main-features {
+    @include xy-grid();
+    @include xy-grid-layout(2, '.frontpage-main-feature', $gutter-position: right);
+}
+
+.frontpage-main-feature {
+    @include card-container($vak-blue, $white);
+    &:nth-child(4n) {
+        background-color: $vak-red;
+    }
+    &:nth-child(4n+1) {
+        background-color: $vak-orange;
+    }
+    &:nth-child(4n+2) {
+        background-color: $vak-blue;
+    }
+    &:nth-child(4n+3) {
+        background-color: $vak-green;
+    }
+}
+
+.main-feature-content {
+    @include card-section;
+}
