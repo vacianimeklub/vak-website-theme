@@ -96,10 +96,16 @@ $logo-img-size-large: $logo-font-base-size-large * $font-to-logo-ratio;
     margin-top: rem-calc(32);
 }
 
+$frontpage-cta-color: $vak-orange;
+
 .frontpage-cta-button {
     font-weight: bold;
-    @include button($background: transparentize($vak-blue, 0.15), $color: $almost-white);
-    border: 2px solid darken($vak-blue, 5%);
+    @include button(
+        $background: transparentize($frontpage-cta-color, 0.25), 
+        $background-hover: transparentize($frontpage-cta-color, 0.05), 
+        $color: $almost-white
+    );
+    border: 2px solid darken($frontpage-cta-color, 8%);
     //@include button-expand;
     //@include button($background: $almost-white, $background-hover: $white, $color: $almost-white, $style: hollow);
 }
@@ -121,7 +127,7 @@ $logo-img-size-large: $logo-font-base-size-large * $font-to-logo-ratio;
         background-color: $vak-blue;
     }
     &:nth-child(4n+3) {
-        background-color: $vak-teal2;
+        background-color: $vak-teal;
     }
 }
 
