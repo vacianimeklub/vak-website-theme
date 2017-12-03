@@ -133,3 +133,7 @@ $nav-fa-space: 8px;
 .nav-next a .fa {
     margin-left: rem-calc($nav-fa-space);
 }
+
+span.label a {
+    color: inherit;
+}

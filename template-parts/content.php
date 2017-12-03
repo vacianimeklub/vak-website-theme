@@ -33,6 +33,10 @@
 				)
 			);
 		?>
-		<?php $tag = get_the_tags(); if ( $tag ) { ?><p><?php the_tags(); ?></p><?php } ?>
+		<?php $tag = get_the_tags(); if ( $tag ) { ?><p><?php the_tags( 
+			__( 'Tags: ', 'foundationpress') . '<span class="label info">', 
+			'</span> <span class="label info">', 
+			'</span>'
+		); ?></p><?php } ?>
 	</footer>
 </article>
