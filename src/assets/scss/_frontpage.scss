@@ -92,7 +92,9 @@ $logo-img-size-large: $logo-font-base-size-large * $font-to-logo-ratio;
 }
 
 .frontpage-cta-button {
-    @include button($background: $vak-green, $color: $almost-white);
+    font-weight: bold;
+    @include button($background: transparentize($vak-blue, 0.15), $color: $almost-white);
+    border: 2px solid darken($vak-blue, 5%);
     //@include button-expand;
     //@include button($background: $almost-white, $background-hover: $white, $color: $almost-white, $style: hollow);
 }
