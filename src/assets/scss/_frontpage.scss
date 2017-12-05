@@ -133,3 +133,63 @@ $frontpage-cta-color: $vak-orange;
 .main-feature-content {
     @include card-section;
 }
+
+
+// Members
+$member-avatar-size: 72px;
+
+.frontpage-member-avatar {
+    width: $member-avatar-size;
+    height: $member-avatar-size;
+    border-radius: $member-avatar-size / 2;
+    position: relative;
+    left: $member-avatar-size / 4;
+}
+
+.frontpage-members-list {
+    @include xy-grid();
+    @include xy-grid-layout(3, '.frontpage-member', $gutter-position: bottom right);
+}
+
+.frontpage-member {
+    @include card-container($white);
+    padding-top: rem-calc(16);
+    padding-bottom: rem-calc(16);
+
+    @include xy-grid;
+}
+
+.frontpage-member-info {
+    @include xy-cell(4);
+    text-align: right;
+    position: relative;
+    left: - $member-avatar-size / 8;
+}
+
+.frontpage-member-quote {
+    @include xy-cell(8);
+
+    padding: 0;
+    border-left: none;
+    color: $vak-black;
+
+    font-size: rem-calc(14);
+}
+
+
+.frontpage-member-name {
+    font-size: rem-calc(30);
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.frontpage-member-title {
+    font-size: rem-calc(16);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.frontpage-member-since {
+    font-size: rem-calc(12);
+    margin-bottom: 0;
+}
