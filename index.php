@@ -57,7 +57,7 @@ get_header(); ?>
 								<h4 class="frontpage-member-title">vezetőségi tag</h4>
 								<p class="frontpage-member-since">Tagunk 2012. február óta</p>
 							</div>
-							<blockquote class="frontpage-member-quote">Barátokat, kissé talán egy második családot.:) Embereket, akikhez bizalommal fordulhatok, akik törődnek velem és akikkel törődhetek.</blockquote>
+							<blockquote class="frontpage-member-quote">Barátokat, kissé talán egy második családot. :) Embereket, akikhez bizalommal fordulhatok, akik törődnek velem és akikkel törődhetek.</blockquote>
 						</div>
 						<div class="frontpage-member">
 							<div class="frontpage-member-info">
@@ -82,28 +82,28 @@ get_header(); ?>
 				<div class="frontpage-main-features">
 					<div class="frontpage-main-feature">
 						<div class="main-feature-content">
-							<h4 class="main-feature-title">Eseményeink</h4>
-							<div class="main-feature-text">Minden héten csütörtökön találkozót tartunk - általában a váci Madách Imre Művelődési Központban.</div>
+							<h4 class="main-feature-title">Eseményeinkről</h4>
+							<div class="main-feature-text">Rendszeres találkozóinkat minden hét csütörtök délutánján tartjuk - általában a váci Madách Imre Művelődési Központban. 
+							Ezen kívül sokszor tartunk kisebb találkozókat Budapesten.</div>
 						</div>
 					</div>
 					<div class="frontpage-main-feature">
 						<div class="main-feature-content">
-							<h4 class="main-feature-title">Legnépszerűbb cikkeink</h4>
+							<h4 class="main-feature-title">Kedvelj minket a Facebook-on is!</h4>
 							<div class="main-feature-text"></div>
 						</div>
 					</div>
 					<div class="frontpage-main-feature">
 						<div class="main-feature-content">
-							<h4 class="main-feature-title">VAKstars</h4>
-							<div class="main-feature-text">A Váci Anime Klub saját fejlesztésű jutalmazó / motivációs játéka, pozitív pszichológia alapokon.</div>
+							<h4 class="main-feature-title">Legnépszerűbb cikkeink</h4>
+							<div class="main-feature-text">
+							</div>
 						</div>
 					</div>
 					<div class="frontpage-main-feature">
 						<div class="main-feature-content">
-							<h4 class="main-feature-title">Galéria</h4>
-							<div class="main-feature-text">
-								Itt találhatsz rólunk képeket: http://vacianimeklub.local/category/kepeink/
-							</div>
+							<h4 class="main-feature-title">VAKstars</h4>
+							<div class="main-feature-text">Van a klubunknak egy saját fejlesztésű jutalmazó / motivációs játéka, pozitív pszichológia alapokon.</div>
 						</div>
 					</div>
 				</div>
