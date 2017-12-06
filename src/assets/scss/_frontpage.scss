@@ -86,12 +86,12 @@ $logo-img-size-large: $logo-font-base-size-large * $vak-font-to-logo-ratio;
 }
 
 .frontpage-header-body {
-    font-size: rem-calc(22);
+    font-size: rem-calc(24);
     margin-bottom: rem-calc(36);    
 }
 
 .frontpage-header-small {
-    font-size: rem-calc(18);
+    font-size: rem-calc(20);
     margin-top: rem-calc(32);
 }
 
@@ -111,7 +111,9 @@ $frontpage-cta-color: $vak-orange;
 
 .frontpage-main-features {
     @include xy-grid();
-    @include xy-grid-layout(2, '.frontpage-main-feature', $gutter-position: right);
+    @include breakpoint(medium) {
+        @include xy-grid-layout(2, '.frontpage-main-feature', $gutter-position: right);
+    }
 }
 
 .frontpage-main-feature {
@@ -142,13 +144,16 @@ $member-avatar-size: 72px;
     width: $member-avatar-size;
     height: $member-avatar-size;
     border-radius: $member-avatar-size / 2;
-    position: relative;
-    left: $member-avatar-size / 4;
 }
 
 .frontpage-members-list {
     @include xy-grid();
-    @include xy-grid-layout(3, '.frontpage-member', $gutter-position: bottom right);
+    @include breakpoint(medium) {
+        @include xy-grid-layout(2, '.frontpage-member', $gutter-position: bottom right);
+    }
+    @include breakpoint(large) {
+        @include xy-grid-layout(3, '.frontpage-member', $gutter-position: bottom right);
+    }
 }
 
 .frontpage-member {
@@ -161,9 +166,7 @@ $member-avatar-size: 72px;
 
 .frontpage-member-info {
     @include xy-cell(4);
-    text-align: right;
-    position: relative;
-    left: - $member-avatar-size / 8;
+    text-align: center;
 }
 
 .frontpage-member-quote {
