@@ -26,6 +26,10 @@
   }
 }
 
+.site-header {
+  background-color: $topbar-background;
+}
+
 .top-bar {
   .menu .menu-item {
     & > a { 
