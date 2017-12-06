@@ -33,7 +33,7 @@
 					<h2 class="frontpage-header-subtitle">Animés társaságra vágysz?</h2>
 					<p class="frontpage-header-body">Gyere el hozzánk, ismerkedj meg velünk és szerezz új animés barátokat!</p>
 					<a href="/csatlakoznal" class="frontpage-cta-button button large">Csatlakozz hozzánk!</a>
-					<p class="frontpage-header-small">Mi vagyunk a Váci Anime Klub, az észak-Pest megyei animések második otthona 2007 óta.</p>
+					<p class="frontpage-header-small">Mi vagyunk a Váci Anime Klub: az észak-Pest megyei animések második otthona 2007 óta.</p>
 				</div>
 			</header>
 		</div>
