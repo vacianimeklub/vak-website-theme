@@ -30,10 +30,7 @@
 					<img class="frontpage-logo" src="<?php echo get_template_directory_uri() . "/"?>dist/assets/images/vaci-anime-klub-logo.svg" alt="Váci Anime Klub logo"/>
 				</div>
 				<div class="frontpage-header-contents">
-					<h2 class="frontpage-header-subtitle">Animés társaságra vágysz?</h2>
-					<p class="frontpage-header-body">Gyere el hozzánk, ismerkedj meg velünk és szerezz új animés barátokat!</p>
-					<a href="/csatlakoznal" class="frontpage-cta-button button large">Csatlakozz hozzánk!</a>
-					<p class="frontpage-header-small">Mi vagyunk a Váci Anime Klub: az észak-Pest megyei animések második otthona 2007 óta.</p>
+					<?php dynamic_sidebar( 'frontpage-header-widget' ) ?>
 				</div>
 			</header>
 		</div>

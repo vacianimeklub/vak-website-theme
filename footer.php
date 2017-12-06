@@ -10,9 +10,11 @@
 ?>
 
 <div class="footer-container">
-	<footer class="footer">
-		<?php dynamic_sidebar( 'footer-widgets' ); ?>
-	</footer>
+	<?php if ( !is_front_page() ): ?>
+		<footer class="footer">
+			<?php dynamic_sidebar( 'footer-widgets' ); ?>
+		</footer>
+	<?php endif; ?>
 	<footer class="footer-bottom">
 		<p>Váci Anime Klub weboldal - v5.0 | A weboldalon található cikkek a Váci Anime Klub tulajdonát képezik. &copy; <?php print date("Y"); ?></p>
 	</footer>

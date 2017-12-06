@@ -134,6 +134,10 @@ $frontpage-cta-color: $vak-orange;
 
 .main-feature-content {
     @include card-section;
+
+    a {
+        color: lighten($vak-blue, 60%);
+    }
 }
 
 

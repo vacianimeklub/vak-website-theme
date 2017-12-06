@@ -80,32 +80,7 @@ get_header(); ?>
 					</div>
 				</div>
 				<div class="frontpage-main-features">
-					<div class="frontpage-main-feature">
-						<div class="main-feature-content">
-							<h4 class="main-feature-title">Eseményeinkről</h4>
-							<div class="main-feature-text">Rendszeres találkozóinkat minden hét csütörtök délutánján tartjuk - általában a váci Madách Imre Művelődési Központban. 
-							Ezen kívül sokszor tartunk kisebb találkozókat Budapesten.</div>
-						</div>
-					</div>
-					<div class="frontpage-main-feature">
-						<div class="main-feature-content">
-							<h4 class="main-feature-title">Kedvelj minket a Facebook-on is!</h4>
-							<div class="main-feature-text"></div>
-						</div>
-					</div>
-					<div class="frontpage-main-feature">
-						<div class="main-feature-content">
-							<h4 class="main-feature-title">Legnépszerűbb cikkeink</h4>
-							<div class="main-feature-text">
-							</div>
-						</div>
-					</div>
-					<div class="frontpage-main-feature">
-						<div class="main-feature-content">
-							<h4 class="main-feature-title">VAKstars</h4>
-							<div class="main-feature-text">A VAKstars a Váci Anime klubu saját fejlesztésű jutalmazó / motivációs játéka, pozitív pszichológiai alapokon.</div>
-						</div>
-					</div>
+					<?php dynamic_sidebar( 'frontpage-feature-widgets' ); ?>
 				</div>
 			</main>
 		<?php else: ?>
