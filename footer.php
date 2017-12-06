@@ -13,6 +13,9 @@
 	<footer class="footer">
 		<?php dynamic_sidebar( 'footer-widgets' ); ?>
 	</footer>
+	<footer class="footer-bottom">
+		<p>Váci Anime Klub weboldal - v5.0 | A weboldalon található cikkek a Váci Anime Klub tulajdonát képezik. &copy; <?php print date("Y"); ?></p>
+	</footer>
 </div>
 
 <?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
