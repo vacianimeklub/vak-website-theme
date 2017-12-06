@@ -103,7 +103,7 @@ get_header(); ?>
 					<div class="frontpage-main-feature">
 						<div class="main-feature-content">
 							<h4 class="main-feature-title">VAKstars</h4>
-							<div class="main-feature-text">Van a klubunknak egy saját fejlesztésű jutalmazó / motivációs játéka, pozitív pszichológia alapokon.</div>
+							<div class="main-feature-text">A VAKstars a Váci Anime klubu saját fejlesztésű jutalmazó / motivációs játéka, pozitív pszichológiai alapokon.</div>
 						</div>
 					</div>
 				</div>
