@@ -201,3 +201,8 @@ span.label a {
         color: $vak-black;
     }
 }
+
+article.post header {
+    font-size: rem-calc(14);
+    font-style: italic;
+}
