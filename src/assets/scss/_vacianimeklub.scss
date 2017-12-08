@@ -176,3 +176,28 @@ span.label a {
         font-style: italic;
     }
 }
+
+.entry-content {
+    figure.wp-caption {
+        margin: rem-calc(20);
+    }
+
+    figure.wp-caption.aligncenter {
+        a img {
+            display: block;
+            margin: 0 auto;    
+        }
+        figcaption.wp-caption-text {
+            max-width: 50%;
+        }
+    }
+
+    figcaption.wp-caption-text {
+        margin: 0 auto;
+        max-width: rem-calc(150px);
+        text-align: center;
+        font-size: rem-calc(16);
+        font-style: italic;
+        color: $vak-black;
+    }
+}
