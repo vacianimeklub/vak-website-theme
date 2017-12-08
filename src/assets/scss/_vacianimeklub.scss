@@ -162,3 +162,17 @@ span.label a {
         font-weight: normal;
     }
 }
+
+.sidebar .widget_recent_entries {
+    li {
+        margin-bottom: rem-calc(9);
+    }
+    li a {
+        font-size: rem-calc(18);
+    }
+    .post-date {
+        display: block;
+        font-size: rem-calc(14);
+        font-style: italic;
+    }
+}
