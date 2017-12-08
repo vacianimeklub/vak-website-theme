@@ -19,65 +19,8 @@ get_header(); ?>
 	<div class="main-grid">
 		<?php if ( is_front_page() ): ?>
 			<main class="main-content-full-width">
-				<?php // move this to template-parts ?>
-				<div class="frontpage-members">
-					<h2>Tagjainktól kérdeztük: mit jelent számodra ez a klub?</h2>
-					<div class="frontpage-members-list">
-						<div class="frontpage-member">
-							<div class="frontpage-member-info">
-								<img class="frontpage-member-avatar" src="<?php echo get_template_directory_uri() . "/" ?>dist/assets/images/avatars/yasa.jpg" alt="">
-								<h3 class="frontpage-member-name">Yasa</h3>
-								<h4 class="frontpage-member-title">vezetőségi tag</h4>
-								<p class="frontpage-member-since">Tagunk 2007. szeptember óta</p>
-							</div>
-							<blockquote class="frontpage-member-quote">Rengeteg jó embert és jó barátot ismertem meg a klubnak hála. Ezt az érzést semmiért nem adnám :)</blockquote>
-						</div>
-						<div class="frontpage-member">
-							<div class="frontpage-member-info">
-								<img class="frontpage-member-avatar" src="<?php echo get_template_directory_uri() . "/" ?>dist/assets/images/avatars/scor.jpg" alt="">
-								<h3 class="frontpage-member-name">Scor</h3>
-								<h4 class="frontpage-member-title">klubvezető</h4>
-								<p class="frontpage-member-since">Tagunk 2007. szeptember óta</p>
-							</div>
-							<blockquote class="frontpage-member-quote">A VAK ad egy helyet, ahol egy kicsit őszintébben lehetünk önmagunk, közelebb kerülhetünk magunkhoz és másokhoz is. És mindenki, aki a közelünkbe kerül, érdekes személyiség valamiért...</blockquote>
-						</div>
-						<div class="frontpage-member">
-							<div class="frontpage-member-info">
-								<img class="frontpage-member-avatar" src="<?php echo get_template_directory_uri() . "/" ?>dist/assets/images/avatars/zaku.jpg" alt="">
-								<h3 class="frontpage-member-name">Zaku</h3>
-								<h4 class="frontpage-member-title">vezetőségi tag</h4>
-								<p class="frontpage-member-since">Tagunk 2010. november óta</p>
-							</div>
-							<blockquote class="frontpage-member-quote">Egy család akire számíthatok, és ha vannak is ellentétek közöttünk, idővel bármit meg tudunk oldani ha mindenki összefog és közösen akarjuk.</blockquote>
-						</div>
-						<div class="frontpage-member">
-							<div class="frontpage-member-info">
-								<img class="frontpage-member-avatar" src="<?php echo get_template_directory_uri() . "/" ?>dist/assets/images/avatars/rizi.jpg" alt="">
-								<h3 class="frontpage-member-name">Rizi</h3>
-								<h4 class="frontpage-member-title">vezetőségi tag</h4>
-								<p class="frontpage-member-since">Tagunk 2012. február óta</p>
-							</div>
-							<blockquote class="frontpage-member-quote">Barátokat, kissé talán egy második családot. :) Embereket, akikhez bizalommal fordulhatok, akik törődnek velem és akikkel törődhetek.</blockquote>
-						</div>
-						<div class="frontpage-member">
-							<div class="frontpage-member-info">
-								<img class="frontpage-member-avatar" src="<?php echo get_template_directory_uri() . "/" ?>dist/assets/images/avatars/dave.jpg" alt="">
-								<h3 class="frontpage-member-name">Dave</h3>
-								<h4 class="frontpage-member-title">vezetőségi tag</h4>
-								<p class="frontpage-member-since">Tagunk 2013 óta</p>
-							</div>
-							<blockquote class="frontpage-member-quote">Mindig örömmel jövök a klubba. Egy olyan baráti társaság ahol jól érezhetem magam.</blockquote>
-						</div>
-						<div class="frontpage-member">
-							<div class="frontpage-member-info">
-								<img class="frontpage-member-avatar" src="<?php echo get_template_directory_uri() . "/" ?>dist/assets/images/avatars/kardfogu.jpg" alt="">
-								<h3 class="frontpage-member-name">Kardfogú</h3>
-								<h4 class="frontpage-member-title">vezetőségi tag</h4>
-								<p class="frontpage-member-since">Tagunk 2016 tavasza óta</p>
-							</div>
-							<blockquote class="frontpage-member-quote">Egy nagyon jó, baráti társasággal hozott össze a sors. Sok mindenről lehetett beszélgetni velük.</blockquote>
-						</div>
-					</div>
+				<div class="frontpage-contents">
+					<?php dynamic_sidebar( 'frontpage-content-widgets' ); ?>
 				</div>
 				<div class="frontpage-main-features">
 					<?php dynamic_sidebar( 'frontpage-feature-widgets' ); ?>

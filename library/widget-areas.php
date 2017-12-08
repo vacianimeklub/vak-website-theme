@@ -41,11 +41,21 @@ function foundationpress_sidebar_widgets() {
 	register_sidebar(array(
 		'id' => 'frontpage-header-widget',
 		'name' => __( 'Frontpage header widget', 'foundationpress' ),
-		'description' => 'Húzz ide egy darab widget-et - és NE állíts be hozzá címet.',
+		'description' => __( "Drag a widget here - and make sure you don't set a title.", 'foundationpress' ),
 		'before_widget' => '',
 		'after_widget' => '',
 		'before_title' => '',
 		'after_title' => '',
+	));
+
+	register_sidebar(array(
+		'id' => 'frontpage-content-widgets',
+		'name' => __( 'Frontpage content widgets', 'foundationpress' ),
+		'description' => __( 'Drag widgets to this footer container', 'foundationpress' ),
+		'before_widget' => '<div class="frontpage-content">',
+		'after_widget' => '</div>',
+		'before_title' => '<h2>',
+		'after_title' => '</h2>',
 	));
 }
 
