@@ -137,3 +137,28 @@ $nav-fa-space: 8px;
 span.label a {
     color: inherit;
 }
+
+.looking-for-members-sidebar-widget { // This class is added to a WYSIWYG widget via plugin
+    background-color: lighten($vak-blue, 60%);
+    padding: rem-calc(20);
+
+    .sidebar-join-button {
+        font-weight: bold;
+        $join-buttom-color: $vak-red;
+        @include button(
+            $background: transparentize($join-buttom-color, 0.25), 
+            $background-hover: transparentize($join-buttom-color, 0.1), 
+            $color: $white
+        );
+        @include button-expand;
+        margin-bottom: 0;
+    }
+}
+
+.sidebar .widget {   
+    margin-bottom: rem-calc(30);
+    h6 {
+        font-size: rem-calc(30);
+        font-weight: normal;
+    }
+}
