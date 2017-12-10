@@ -32,33 +32,6 @@ $vak-font-to-logo-ratio: 2.66;
     @include button($background: $vak-orange, $background-hover: lighten($vak-orange, 5%), $color: $white);
 }
 
-$topbar-title-font-size: 22;
-$topbar-text-spacing: $topbar-title-font-size / 2;
-$topbar-logo-img-size: $topbar-title-font-size * $vak-font-to-logo-ratio * 0.75;
-
-.topbar-logo-wrapper {
-    padding-top: 6px;
-    padding-left: 8px;
-
-    @include flex;
-
-    .topbar-logo-title {
-        font-size: rem-calc($topbar-title-font-size);
-        line-height: rem-calc($topbar-logo-img-size);
-        color: $white;
-        font-weight: bold;
-        @include flex-order(1);
-    }
-
-    .topbar-logo {
-        @include flex-order(0);
-        width: rem-calc($topbar-logo-img-size);
-        height: rem-calc($topbar-logo-img-size);
-        margin-right: rem-calc($topbar-text-spacing);
-        shape-rendering: crispEdges;
-    }
-}
-
 .nav-previous a,
 .nav-next a {
     @include button($background: $vak-blue, $style: hollow);

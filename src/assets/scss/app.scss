@@ -83,9 +83,12 @@
 @import "templates/front";
 @import "templates/kitchen-sink";
 
+// VAK custom styling
 @import "vacianimeklub";
-@import "_frontpage";
+@import "_topbar";
 @import "_featherlight";
+@import "_content_images";
+
+@import "_frontpage";
 @import "_contactform";
 @import "_post__join";
-@import "_content_images";
