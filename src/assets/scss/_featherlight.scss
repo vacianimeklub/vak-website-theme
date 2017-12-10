@@ -1,0 +1,16 @@
+body { // just to bump...
+    .featherlight {
+        .featherlight-content {
+            max-height: 66%;
+
+            .caption {
+                width: 100%;
+                max-width: initial;
+                margin-top: rem-calc(20);
+                font-weight: normal;
+                text-align: center;
+                white-space: normal;
+            }
+        }
+    }
+}
