@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: foundationpress-libsass-template 5.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-06 23:31+0000\n"
-"PO-Revision-Date: 2017-12-06 23:43+0000\n"
+"POT-Creation-Date: 2017-12-10 18:06+0000\n"
+"PO-Revision-Date: 2017-12-10 18:07+0000\n"
 "Language-Team: Hungarian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,107 +13,13 @@ msgstr ""
 "Last-Translator: Zoltán Adamek <djscorchio@gmail.com>\n"
 "Language: hu-HU"
 
-#: comments.php:26
-msgid "Reply"
-msgstr "Válasz"
+#: library/widget-areas.php:44
+msgid "Drag a widget here - and make sure you don't set a title."
+msgstr "Húzz egy widget-et ide - és ne állíts be neki címet."
 
-#. %1$s: site url, %2$s: user identity
-#: comments.php:98
-#, php-format
-msgid "Logged in as <a href=\"%1$s/wp-admin/profile.php\">%2$s</a>."
-msgstr ""
-"Be vagy jelentkezve, mint <a href=\"%1$s/wp-admin/profile.php\">%2$s</a>."
-
-#: header.php:42
-msgid "Main Menu"
-msgstr "Főmenü"
-
-#: library/custom-nav.php:16
-msgid "Mobile Menu Settings"
-msgstr "Mobil menü beállítások"
-
-#: library/custom-nav.php:17
-msgid "Controls the mobile menu"
-msgstr "Beállítja a mobil menüt"
-
-#: library/custom-nav.php:22
-msgid "Mobile navigation layout"
-msgstr "Mobil navigációs elrendezés"
-
-#: library/custom-nav.php:31
-msgid "topbar"
-msgstr "felső sáv"
-
-#: library/navigation.php:11
-msgid "Right Top Bar"
-msgstr "Felső sáv jobb oldala"
-
-#: library/navigation.php:12
-msgid "Mobile"
-msgstr "Mobil"
-
-#: library/navigation.php:43
-msgid "mobile-nav"
-msgstr "mobile-nav"
-
-#: library/vacianimeklub-custom.php:3
-msgid "Read more"
-msgstr "Olvass tovább"
-
-#: library/widget-areas.php:33
-msgid "Frontpage featured widgets"
-msgstr "Főoldal: kiemelt widgetek"
-
-#: library/widget-areas.php:43
-msgid "Frontpage header widget"
-msgstr "Főoldal: fejléc widget"
-
-#. Name of the template
-msgid "Front"
-msgstr "Főoldal"
-
-#. Name of the template
-msgid "Kitchen Sink"
-msgstr "Mindent bele"
-
-#. Name of the template
-msgid "Full Width"
-msgstr "Teljes szélességű"
-
-#. Name of the template
-msgid "Left Sidebar"
-msgstr "Oldalsáv a bal oldalon"
-
-#: template-parts/content-page.php:18 template-parts/content.php:25
-msgid "Edit"
-msgstr "Szerkesztés"
-
-#: template-parts/content.php:37
-msgid "Tags: "
-msgstr "Címkék: "
-
-#. Name of the theme
-msgid "FoundationPress"
-msgstr "FoundationPress"
-
-#. Description of the theme
-msgid ""
-"FoundationPress is a WordPress starter theme based on Foundation 6 by Zurb"
-msgstr ""
-"A FoundationPress egy WordPress induló téma a Zurb által készített "
-"Foundation 6 alapjain"
-
-#. URI of the theme
-msgid "http://foundationpress.olefredrik.com"
-msgstr "http://foundationpress.olefredrik.com"
-
-#. Author of the theme
-msgid "Ole Fredrik Lie"
-msgstr "Ole Fredrik Lie"
-
-#. Author URI of the theme
-msgid "http://olefredrik.com/"
-msgstr "http://olefredrik.com/"
+#: library/widget-areas.php:53
+msgid "Frontpage content widgets"
+msgstr "Főoldali tartalmi widget-ek"
 
 #: 404.php:16
 msgid "File Not Found"
@@ -145,13 +51,17 @@ msgid "Click the <a href=\"javascript:history.back()\">Back</a> button"
 msgstr "Kattints a <a href=\"javascript:history.back()\">Vissza</a> gombra"
 
 #. previous pages when applicable
-#: archive.php:42 index.php:107 search.php:36
+#: archive.php:42 index.php:50 search.php:36
 msgid "&larr; Older posts"
 msgstr "&larr; Régebbi bejegyzések"
 
-#: archive.php:43 index.php:108 search.php:37
+#: archive.php:43 index.php:51 search.php:37
 msgid "Newer posts &rarr;"
 msgstr "Újabb bejegyzések &rarr;"
+
+#: comments.php:26
+msgid "Reply"
+msgstr "Válasz"
 
 #: comments.php:35 library/class-foundationpress-comments.php:81
 msgid "Your comment is awaiting moderation."
@@ -180,6 +90,13 @@ msgstr "Szólj hozzá ehhez: \"%s\"!"
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "<a href=\"%s\">Be kell jelentkezned</a>, hogy hozzászólhass."
+
+#. %1$s: site url, %2$s: user identity
+#: comments.php:98
+#, php-format
+msgid "Logged in as <a href=\"%1$s/wp-admin/profile.php\">%2$s</a>."
+msgstr ""
+"Be vagy jelentkezve, mint <a href=\"%1$s/wp-admin/profile.php\">%2$s</a>."
 
 #: comments.php:103
 msgid "Log out of this account"
@@ -217,6 +134,10 @@ msgstr "A következő HTML tag-eket használhatod:"
 msgid "Submit Comment"
 msgstr "Hozzászólás beküldése"
 
+#: header.php:42
+msgid "Main Menu"
+msgstr "Főmenü"
+
 #: search.php:16
 msgid "Search Results for"
 msgstr "Keresési találatok erre:"
@@ -227,7 +148,7 @@ msgstr "Keresés"
 
 #: library/class-foundationpress-comments.php:25
 msgid "No Responses to"
-msgstr "Nem érkezett hozzászólás: "
+msgstr "Nem érkezett hozzászólás erre: "
 
 #: library/class-foundationpress-comments.php:25
 msgid "One Response to"
@@ -241,6 +162,22 @@ msgstr "% hozzászólás érkezett erre:"
 #, php-format
 msgid "<cite class=\"fn\">%s</cite>"
 msgstr "<cite class=\"fn\">%s</cite>"
+
+#: library/custom-nav.php:16
+msgid "Mobile Menu Settings"
+msgstr "Mobil menü beállítások"
+
+#: library/custom-nav.php:17
+msgid "Controls the mobile menu"
+msgstr "Beállítja a mobil menüt"
+
+#: library/custom-nav.php:22
+msgid "Mobile navigation layout"
+msgstr "Mobil navigációs elrendezés"
+
+#: library/custom-nav.php:31
+msgid "topbar"
+msgstr "felső sáv"
 
 #: library/entry-meta.php:12
 #, php-format
@@ -277,6 +214,22 @@ msgstr "<a href=\"%s\">Menük</a>"
 msgid "<a href=\"%s\">Customize</a>"
 msgstr "<a href=\"%s\">Testreszabás</a>"
 
+#: library/navigation.php:11
+msgid "Right Top Bar"
+msgstr "Felső sáv jobb oldala"
+
+#: library/navigation.php:12
+msgid "Mobile"
+msgstr "Mobil"
+
+#: library/navigation.php:43
+msgid "mobile-nav"
+msgstr "mobile-nav"
+
+#: library/vacianimeklub-custom.php:3
+msgid "Read more"
+msgstr "Olvass tovább"
+
 #: library/widget-areas.php:13
 msgid "Sidebar widgets"
 msgstr "Oldalsáv widget-ek"
@@ -290,13 +243,38 @@ msgid "Footer widgets"
 msgstr "Lábléc widget-ek"
 
 #: library/widget-areas.php:24 library/widget-areas.php:34
+#: library/widget-areas.php:54
 msgid "Drag widgets to this footer container"
-msgstr "Húzz widgeteket ide."
+msgstr "Húzz widget-eket ide."
+
+#: library/widget-areas.php:33
+msgid "Frontpage featured widgets"
+msgstr "Főoldal: kiemelt widget-ek"
+
+#: library/widget-areas.php:43
+msgid "Frontpage header widget"
+msgstr "Főoldal: fejléc widget"
+
+#. Name of the template
+msgid "Front"
+msgstr "Főoldal"
 
 #: page-templates/front.php:37 template-parts/content-page.php:24
 #: template-parts/content.php:31
 msgid "Pages:"
 msgstr "Oldalak:"
+
+#. Name of the template
+msgid "Kitchen Sink"
+msgstr "Mindent bele"
+
+#. Name of the template
+msgid "Full Width"
+msgstr "Teljes szélességű"
+
+#. Name of the template
+msgid "Left Sidebar"
+msgstr "Oldalsáv a bal oldalon"
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
@@ -322,3 +300,34 @@ msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr "Nem találjuk, amit kerestél. Talán a kereséssel megtalálhatod."
+
+#: template-parts/content-page.php:18 template-parts/content.php:25
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: template-parts/content.php:37
+msgid "Tags: "
+msgstr "Címkék: "
+
+#. Name of the theme
+msgid "FoundationPress"
+msgstr "FoundationPress"
+
+#. Description of the theme
+msgid ""
+"FoundationPress is a WordPress starter theme based on Foundation 6 by Zurb"
+msgstr ""
+"A FoundationPress egy WordPress induló téma a Zurb által készített "
+"Foundation 6 alapjain"
+
+#. URI of the theme
+msgid "http://foundationpress.olefredrik.com"
+msgstr "http://foundationpress.olefredrik.com"
+
+#. Author of the theme
+msgid "Ole Fredrik Lie"
+msgstr "Ole Fredrik Lie"
+
+#. Author URI of the theme
+msgid "http://olefredrik.com/"
+msgstr "http://olefredrik.com/"

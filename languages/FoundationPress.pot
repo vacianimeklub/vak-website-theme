@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: foundationpress-libsass-template 5.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-06 23:26+0000\n"
+"POT-Creation-Date: 2017-12-10 18:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,11 +42,11 @@ msgid "Click the <a href=\"javascript:history.back()\">Back</a> button"
 msgstr ""
 
 #. previous pages when applicable
-#: archive.php:42 index.php:107 search.php:36
+#: archive.php:42 index.php:50 search.php:36
 msgid "&larr; Older posts"
 msgstr ""
 
-#: archive.php:43 index.php:108 search.php:37
+#: archive.php:43 index.php:51 search.php:37
 msgid "Newer posts &rarr;"
 msgstr ""
 
@@ -230,6 +230,7 @@ msgid "Footer widgets"
 msgstr ""
 
 #: library/widget-areas.php:24 library/widget-areas.php:34
+#: library/widget-areas.php:54
 msgid "Drag widgets to this footer container"
 msgstr ""
 
@@ -239,6 +240,14 @@ msgstr ""
 
 #: library/widget-areas.php:43
 msgid "Frontpage header widget"
+msgstr ""
+
+#: library/widget-areas.php:44
+msgid "Drag a widget here - and make sure you don't set a title."
+msgstr ""
+
+#: library/widget-areas.php:53
+msgid "Frontpage content widgets"
 msgstr ""
 
 #. Name of the template
