@@ -1,0 +1,17 @@
+.input-group-field .wpcf7-form-control {
+    margin-bottom: 0;
+}
+
+.input-group-label.small-12 {
+    border-right: $input-prefix-border;
+}
+
+.input-group-field.small-12 .wpcf7-form-control {
+    @include breakpoint(medium down) {
+        padding-left: 16px;
+    }
+}
+
+.wpcf7-submit {
+    @include button(true);
+}

@@ -14,26 +14,6 @@ $vak-font-to-logo-ratio: 2.66;
     width: 1px;
 }
 
-// Contact form related styling
-
-.input-group-field .wpcf7-form-control {
-    margin-bottom: 0;
-}
-
-.input-group-label.small-12 {
-    border-right: $input-prefix-border;
-}
-
-.input-group-field.small-12 .wpcf7-form-control {
-    @include breakpoint(medium down) {
-        padding-left: 16px;
-    }
-}
-
-.wpcf7-submit {
-    @include button(true);
-}
-
 // Widget fixes
 .widget .widget_facebook_likebox {
     @include responsive-embed(default);
@@ -50,42 +30,6 @@ $vak-font-to-logo-ratio: 2.66;
 
 .edit-link a {
     @include button($background: $vak-orange, $background-hover: lighten($vak-orange, 5%), $color: $white);
-}
-
-// Join 
-#post-1246 .entry-content {
-    .join-wrapper {
-        @include xy-grid;
-    }
-
-    .join-content {
-        @include xy-cell(12, false);
-        @include breakpoint(large) {
-            @include xy-cell(8, false);
-        }
-    }
-
-    .join-sidebar {
-        @include xy-cell(12, false);
-        @include breakpoint(large) {
-            @include xy-cell(4, left);
-            @include xy-gutters(left);
-        }
-        @include callout-base;
-        @include callout-style($vak-blue);
-
-        h2 {
-            font-size: rem-calc(32);
-            font-weight: bold;
-        }
-        h3 {
-            font-size: rem-calc(24);
-            margin-top: rem-calc(24);
-        }
-        p {
-            font-size: rem-calc(14);
-        }
-    }
 }
 
 $topbar-title-font-size: 22;
