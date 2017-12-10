@@ -1,0 +1,35 @@
+.main-content #comments { 
+    margin-top: rem-calc(20);
+    .comment-list {
+        margin-left: 0;
+        list-style: none;
+
+        .comment-body {
+            @include media-object-container;
+
+            border-bottom: 1px solid $almost-white;
+            padding-bottom: rem-calc(20);
+
+            .comment-author {
+                @include media-object-section;
+                img { 
+                    @include thumbnail;
+                }
+
+                cite.fn{
+                    font-style: normal;
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                time {
+                    font-size: rem-calc(12);
+                }
+            }
+            .comment-content {
+                @include media-object-section;
+            }
+        }
+    }
+}
