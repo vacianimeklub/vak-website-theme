@@ -121,42 +121,6 @@ span.label a {
     }
 }
 
-$img-shadow-size: rem-calc(8);
-$img-space-around: rem-calc(20);
-.entry-content {
-    .alignright {
-        padding-left: 0;
-        margin-left: $img-space-around;
-    }
-
-    img {
-        box-shadow: 0 rem-calc(2) $img-shadow-size fade-out($color: $vak-blue, $amount: 0.7);
-    }
-
-    figure.wp-caption {
-        margin: $img-space-around;
-    }
-
-    figcaption.wp-caption-text {
-        margin: $img-shadow-size auto;
-        max-width: rem-calc(150px);
-        text-align: center;
-        font-size: rem-calc(16);
-        font-style: italic;
-        color: $vak-black;
-    }
-
-    figure.wp-caption.aligncenter {
-        a img {
-            display: block;
-            margin: 0 auto;    
-        }
-        figcaption.wp-caption-text {
-            max-width: 50%;
-        }
-    }
-}
-
 article.post header {
     font-size: rem-calc(14);
     font-style: italic;
