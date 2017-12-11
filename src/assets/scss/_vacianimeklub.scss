@@ -23,15 +23,6 @@ $vak-font-to-logo-ratio: 2.66;
     font-weight: bold;
 }
 
-// VAK styling
-.more-link {
-    @include button($expand: true, $background: $vak-blue, $background-hover: lighten($vak-blue, 5%), $color: $white);
-}
-
-.edit-link a {
-    @include button($background: $vak-orange, $background-hover: lighten($vak-orange, 5%), $color: $white);
-}
-
 .nav-previous a,
 .nav-next a {
     @include button($background: $vak-blue, $style: hollow);
@@ -94,7 +85,28 @@ span.label a {
     }
 }
 
-article.post header {
-    font-size: rem-calc(14);
-    font-style: italic;
+.main-content article {
+    clear: both;
+    margin-bottom: rem-calc(80);
+
+    header {
+        font-size: rem-calc(14);
+        font-style: italic;
+    }
+
+    footer {
+        padding-top: rem-calc(14);
+        clear: both;
+    }
+
+    .more-link {
+        @include button($background: $vak-blue, $background-hover: lighten($vak-blue, 5%), $style: hollow);
+        display: block;
+        clear: both;
+        margin-top: rem-calc(20);
+    }
+    
+    .edit-link a {
+        @include button($background: $vak-orange, $background-hover: lighten($vak-orange, 5%), $color: $white);
+    }
 }

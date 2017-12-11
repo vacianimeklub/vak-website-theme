@@ -39,18 +39,26 @@ $header-overlay-color: rgba(50, 0, 0, 0.33);
 }
 
 
-$logo-font-base-size-small-mid: 50;
+$logo-font-base-size-small: 30;
+$logo-font-base-size-mid: 50;
 $logo-font-base-size-large: 65;
 
-$logo-text-spacing-small-mid: $logo-font-base-size-small-mid / 2; 
+$logo-text-spacing-small: $logo-font-base-size-small / 2;
+$logo-text-spacing-mid: $logo-font-base-size-mid / 2;
 $logo-text-spacing-large: $logo-font-base-size-large / 2;
 
-$logo-img-size-small-mid: $logo-font-base-size-small-mid * $vak-font-to-logo-ratio;
+$logo-img-size-small: $logo-font-base-size-small * $vak-font-to-logo-ratio;
+$logo-img-size-mid: $logo-font-base-size-mid * $vak-font-to-logo-ratio;
 $logo-img-size-large: $logo-font-base-size-large * $vak-font-to-logo-ratio;
 
 .frontpage-logo-title {
-    font-size: rem-calc($logo-font-base-size-small-mid);
-    line-height: rem-calc($logo-img-size-small-mid);
+    font-size: rem-calc($logo-font-base-size-small);
+    line-height: rem-calc($logo-img-size-small);
+
+    @include breakpoint(medium) {
+        font-size: rem-calc($logo-font-base-size-mid);
+        line-height: rem-calc($logo-img-size-mid);
+    }
 
     @include breakpoint(large) {
         font-size: rem-calc($logo-font-base-size-large);
@@ -59,9 +67,15 @@ $logo-img-size-large: $logo-font-base-size-large * $vak-font-to-logo-ratio;
 }
 
 .frontpage-logo {
-    width: rem-calc($logo-img-size-small-mid);
-    height: rem-calc($logo-img-size-small-mid);
-    margin-right: rem-calc($logo-text-spacing-small-mid);
+    width: rem-calc($logo-img-size-small);
+    height: rem-calc($logo-img-size-small);
+    margin-right: rem-calc($logo-text-spacing-small);
+
+    @include breakpoint(medium) {    
+        width: rem-calc($logo-img-size-mid);
+        height: rem-calc($logo-img-size-mid);
+        margin-right: rem-calc($logo-text-spacing-mid);
+    }
 
     @include breakpoint(large) {
         width: rem-calc($logo-img-size-large);
@@ -73,7 +87,7 @@ $logo-img-size-large: $logo-font-base-size-large * $vak-font-to-logo-ratio;
 .frontpage-logo-title {
     @include flex-order(1);
     font-weight: bold;
-    color: $white;   
+    color: $white;
 }
 
 .frontpage-logo {
@@ -81,18 +95,33 @@ $logo-img-size-large: $logo-font-base-size-large * $vak-font-to-logo-ratio;
 }
 
 .frontpage-header-subtitle {
-    font-size: rem-calc(48);
-    margin-top: rem-calc(24);
+    font-size: rem-calc(36);
+    margin-top: rem-calc(18);
+
+    @include breakpoint(medium) {
+        font-size: rem-calc(48);
+        margin-top: rem-calc(24);
+    }
 }
 
 .frontpage-header-body {
-    font-size: rem-calc(24);
-    margin-bottom: rem-calc(36);    
+    font-size: rem-calc(18);
+    margin-bottom: rem-calc(27);    
+
+    @include breakpoint(medium) {
+        font-size: rem-calc(24);
+        margin-bottom: rem-calc(36);    
+    }
 }
 
 .frontpage-header-small {
-    font-size: rem-calc(20);
-    margin-top: rem-calc(32);
+    font-size: rem-calc(15);
+    margin-top: rem-calc(24);
+
+    @include breakpoint(medium) {
+        font-size: rem-calc(20);
+        margin-top: rem-calc(32);
+    }
 }
 
 $frontpage-cta-color: $vak-orange;
@@ -142,12 +171,19 @@ $frontpage-cta-color: $vak-orange;
 
 
 // Members
+$member-avatar-size-small: 50px;
 $member-avatar-size: 72px;
 
 .frontpage-member-avatar {
-    width: $member-avatar-size;
-    height: $member-avatar-size;
-    border-radius: $member-avatar-size / 2;
+    width: $member-avatar-size-small;
+    height: $member-avatar-size-small;
+    border-radius: $member-avatar-size-small / 2;
+
+    @include breakpoint(medium) {
+        width: $member-avatar-size;
+        height: $member-avatar-size;
+        border-radius: $member-avatar-size / 2;
+    }
 }
 
 .frontpage-members-list {

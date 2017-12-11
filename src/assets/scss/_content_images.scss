@@ -5,13 +5,18 @@ $img-space-around: rem-calc(20);
         padding-left: 0;
         margin-left: $img-space-around;
     }
+    .alignleft {
+        padding-right: 0;
+        margin-right: $img-space-around;
+    }
 
     img {
         box-shadow: 0 rem-calc(2) $img-shadow-size fade-out($color: $vak-blue, $amount: 0.7);
+        margin-bottom: $img-space-around;
     }
 
     figure.wp-caption {
-        margin: $img-space-around;
+        margin: 0 $img-space-around $img-space-around $img-space-around;
     }
 
     figcaption.wp-caption-text {
