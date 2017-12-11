@@ -15,6 +15,11 @@
             'type' => 'option'
         ));
 
+        $wp_customize->add_setting( 'hotjar_site_id' , array(
+            'default' => '',
+            'type' => 'option'
+        ));
+
         $wp_customize->add_control( new WP_Customize_Control( 
             $wp_customize, 
             'facebook_app_id', 
@@ -22,6 +27,18 @@
                 'label'      => 'Facebook app id',
                 'section'    => 'vacianimeklub_section',
                 'settings'   => 'facebook_app_id',
+                'type'       => 'number',
+                'priority'   => 1
+            )
+        ));
+
+        $wp_customize->add_control( new WP_Customize_Control( 
+            $wp_customize, 
+            'hotjar_site_id', 
+            array(
+                'label'      => 'Hotjar site id',
+                'section'    => 'vacianimeklub_section',
+                'settings'   => 'hotjar_site_id',
                 'type'       => 'number',
                 'priority'   => 1
             )
