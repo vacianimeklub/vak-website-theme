@@ -5,15 +5,28 @@
         list-style: none;
 
         .comment-body {
-            @include media-object-container;
+            @include breakpoint(medium) {
+                @include media-object-container;
+            }
 
             border-bottom: 1px solid $almost-white;
             padding-bottom: rem-calc(20);
 
             .comment-author {
-                @include media-object-section;
+                @include xy-cell(full, $gutter-output: false);
+
+                @include breakpoint(medium) {
+                    @include media-object-section;
+                    @include media-object-stack;
+                }
+
                 img { 
                     @include thumbnail;
+                    float: right;
+
+                    @include breakpoint(medium) {
+                        float: none;
+                    }
                 }
 
                 cite.fn{
@@ -26,9 +39,22 @@
                 time {
                     font-size: rem-calc(12);
                 }
+
+                @include clearfix;
             }
             .comment-content {
-                @include media-object-section;
+                
+                clear: both;
+                @include breakpoint(medium) {
+                    clear: none;
+                }
+
+                @include xy-cell(full, $gutter-output: false);
+
+                @include breakpoint(medium) {
+                    @include media-object-section;
+                    @include media-object-stack;
+                }
             }
         }
     }

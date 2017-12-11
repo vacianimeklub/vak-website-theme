@@ -14,6 +14,12 @@ $vak-font-to-logo-ratio: 2.66;
     width: 1px;
 }
 
+@mixin force-break {
+    word-break: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
 // Widget fixes
 .widget .widget_facebook_likebox {
     @include responsive-embed(default);
@@ -108,5 +114,9 @@ span.label a {
     
     .edit-link a {
         @include button($background: $vak-orange, $background-hover: lighten($vak-orange, 5%), $color: $white);
+    }
+
+    a {
+        @include force-break(); 
     }
 }
