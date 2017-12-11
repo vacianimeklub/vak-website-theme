@@ -1,31 +1,69 @@
 $img-shadow-size: rem-calc(8);
 $img-space-around: rem-calc(20);
-.entry-content {
-    .alignright {
-        padding-left: 0;
-        margin-left: $img-space-around;
-    }
-    .alignleft {
-        padding-right: 0;
-        margin-right: $img-space-around;
-    }
 
+@mixin realign-small-image-to-center() {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+        margin-top: rem-calc(40);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include breakpoint(medium) {
+            margin-top: auto;
+        }
+    }
+}
+
+.entry-content {
+    .alignleft {
+        float: none;
+        padding-right: 0;
+        @include realign-small-image-to-center();
+
+        @include breakpoint(medium) {    
+            float: left;
+            margin-right: $img-space-around;
+        }
+        
+    }
+    .alignright {
+        float: none;
+        padding-left: 0;
+        @include realign-small-image-to-center();
+
+        @include breakpoint(medium) {    
+            float: right;
+            margin-left: $img-space-around;
+        }
+    }
+    
     img {
         box-shadow: 0 rem-calc(2) $img-shadow-size fade-out($color: $vak-blue, $amount: 0.7);
         margin-bottom: $img-space-around;
     }
 
     figure.wp-caption {
+        @include breakpoint(medium) {
+            max-height: initial;
+        }
         margin: 0 $img-space-around $img-space-around $img-space-around;
     }
 
     figcaption.wp-caption-text {
         margin: $img-shadow-size auto;
-        max-width: rem-calc(150px);
+        max-width: 75%;
         text-align: center;
         font-size: rem-calc(16);
         font-style: italic;
         color: $vak-black;
+
+        @include breakpoint(medium) {
+            max-width: rem-calc(150);
+        }
     }
 
     figure.wp-caption.aligncenter {
@@ -34,7 +72,7 @@ $img-space-around: rem-calc(20);
             margin: 0 auto;    
         }
         figcaption.wp-caption-text {
-            max-width: 50%;
+            max-width: 75%;
         }
     }
 }
