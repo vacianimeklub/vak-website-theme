@@ -12,13 +12,18 @@
 
         $wp_customize->add_setting( 'facebook_app_id' , array(
             'default' => '',
-            'type' => 'option'
-        ));
+            'type' => 'option',
+        ) );
 
         $wp_customize->add_setting( 'hotjar_site_id' , array(
             'default' => '',
-            'type' => 'option'
-        ));
+            'type' => 'option',
+        ) );
+
+        $wp_customize->add_setting( 'ga_property' , array(
+            'default' => '',
+            'type' => 'option',
+        ) );
 
         $wp_customize->add_control( new WP_Customize_Control( 
             $wp_customize, 
@@ -30,7 +35,7 @@
                 'type'       => 'number',
                 'priority'   => 1
             )
-        ));
+        ) );
 
         $wp_customize->add_control( new WP_Customize_Control( 
             $wp_customize, 
@@ -42,12 +47,23 @@
                 'type'       => 'number',
                 'priority'   => 1
             )
-        ));
+        ) );
+
+        $wp_customize->add_control( new WP_Customize_Control( 
+            $wp_customize, 
+            'ga_property', 
+            array(
+                'label'      => 'Google site property id',
+                'section'    => 'vacianimeklub_section',
+                'settings'   => 'ga_property',
+                'priority'   => 1
+            )
+        ) );
      }
 
      add_action( 'customize_register', 'vacianimeklub_customize_register' );
 
-     add_filter('get_comments_number', 'comment_count', 0);
+     add_filter( 'get_comments_number', 'comment_count', 0 );
      function comment_count( $count ) {
         if ( ! is_admin() ) {
             global $id;
