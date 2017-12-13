@@ -1,5 +1,6 @@
 $img-shadow-size: rem-calc(8);
 $img-space-around: rem-calc(20);
+$img-small-max-height: 150px;
 
 @mixin realign-small-image-to-center() {
     display: block;
@@ -7,13 +8,14 @@ $img-space-around: rem-calc(20);
     margin-right: auto;
 
     img {
-        margin-top: rem-calc(40);
+        margin: rem-calc(40) auto auto 0;
         display: block;
         margin-left: auto;
         margin-right: auto;
 
         @include breakpoint(medium) {
             margin-top: auto;
+            margin-bottom: auto;
         }
     }
 }
@@ -44,12 +46,14 @@ $img-space-around: rem-calc(20);
     img {
         box-shadow: 0 rem-calc(2) $img-shadow-size fade-out($color: $vak-blue, $amount: 0.7);
         margin-bottom: $img-space-around;
+
+        @include breakpoint(small only) {
+            max-height: $img-small-max-height;
+            width: auto;
+        }
     }
 
     figure.wp-caption {
-        @include breakpoint(medium) {
-            max-height: initial;
-        }
         margin: 0 $img-space-around $img-space-around $img-space-around;
     }
 
