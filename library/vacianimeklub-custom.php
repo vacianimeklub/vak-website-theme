@@ -63,8 +63,8 @@
 
      add_action( 'customize_register', 'vacianimeklub_customize_register' );
 
-     add_filter( 'get_comments_number', 'comment_count', 0 );
-     function comment_count( $count ) {
+     add_filter( 'get_comments_number', 'get_comment_count_without_trackbacks', 0 );
+     function get_comment_count_without_trackbacks( $count ) {
         if ( ! is_admin() ) {
             global $id;
             $comments_by_type = &separate_comments(get_comments('status=approve&post_id=' . $id));
