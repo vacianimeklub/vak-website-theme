@@ -1,6 +1,10 @@
-$topbar-title-font-size: 32;
+$topbar-title-font-size: 24;
 $topbar-text-spacing: $topbar-title-font-size / 2;
 $topbar-logo-img-size: $topbar-title-font-size * $vak-font-to-logo-ratio * 0.75;
+
+$topbar-title-font-size-medium: 32;
+$topbar-text-spacing-medium: $topbar-title-font-size-medium / 2;
+$topbar-logo-img-size-medium: $topbar-title-font-size-medium * $vak-font-to-logo-ratio * 0.75;
 
 .top-bar {
     @include xy-grid-container;
@@ -16,6 +20,11 @@ $topbar-logo-img-size: $topbar-title-font-size * $vak-font-to-logo-ratio * 0.75;
     .topbar-logo-title {
         font-size: rem-calc($topbar-title-font-size);
         line-height: rem-calc($topbar-logo-img-size);
+        @include breakpoint(medium) {
+            font-size: rem-calc($topbar-title-font-size-medium);
+            line-height: rem-calc($topbar-logo-img-size-medium);
+        }
+
         color: $white;
         font-weight: bold;
         white-space: nowrap;
@@ -24,9 +33,17 @@ $topbar-logo-img-size: $topbar-title-font-size * $vak-font-to-logo-ratio * 0.75;
 
     .topbar-logo {
         @include flex-order(0);
+
         width: rem-calc($topbar-logo-img-size);
         height: rem-calc($topbar-logo-img-size);
         margin-right: rem-calc($topbar-text-spacing);
+
+        @include breakpoint(medium) {
+            width: rem-calc($topbar-logo-img-size-medium);
+            height: rem-calc($topbar-logo-img-size-medium);
+            margin-right: rem-calc($topbar-text-spacing-medium);
+        }
+
         shape-rendering: crispEdges;
     }
 }
