@@ -119,4 +119,19 @@ span.label a {
     a {
         @include force-break(); 
     }
+
+    .article-highlight {
+        background-color: $vak-teal; 
+        color: $white; 
+        border-radius: 4px; 
+        padding: 1em;
+        a {
+            color: $white;
+            text-decoration: underline;
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+
 }
