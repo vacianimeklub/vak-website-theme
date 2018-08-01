@@ -25,7 +25,7 @@
 		<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
 	<?php endif; ?>
 
-	<?php if ( is_front_page() ): ?>
+	<?php if ( is_front_page() && !is_paged() ): ?>
 		<div class="frontpage-header-wrapper">
 			<header class="frontpage-header" role="banner">
 				<div class="frontpage-header-logo">
