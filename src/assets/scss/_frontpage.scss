@@ -92,6 +92,7 @@ $logo-img-size-large: $logo-font-base-size-large * $vak-font-to-logo-ratio;
 
 .frontpage-logo {
     @include flex-order(0);
+    margin-right: 0.5em;
 }
 
 .frontpage-header-subtitle {
